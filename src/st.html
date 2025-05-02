@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <style>
+    .container{
+        height:100% ;
+        position: relative;
+    }
+    .container img{
+      height: 100vh;
+      width: 100vw;
+      position: relative;
+    
+    }
+    .text-gros h1{
+        position: absolute;
+        top: 10px;
+    }
+  a{
+    transition: all 0.3s ease;
+  }
+  a:hover{
+    color: rgb(63, 182, 182);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  .container2{
+    display: flex;
+    flex-direction: column;
+   }
+    p{
+    display: flex;
+    justify-content: center;
+   }
+   .imgc2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+   background-color: gray;
+   
+   }
+   .imgc2 img{
+    border-radius: 20px;
+   }
+
+  </style>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<body>
+    <!-- main -->
+<div class="w-full bg-cyan-500 relative">
+    <!-- nav -->
+<nav class="w-full flex flex-row justify-between bg-white p-4 fixed">
+    <!-- logo -->
+    <section id="home">
+    <a href="#home" ><img class="w-24 h-20 ml-4" src="./images/ajdids.jpg"/></a> 
+    </section>
+    <!-- nav-mid -->
+     <div class="flex flex-row items-center gap-16">
+     <section id="idées-de-voyages">
+        <a href="#idées de voyages" class="font-poppins font-bold ">idées de voyage</a>
+     </section>
+     <section id="Destinations">
+        <a href="#Destinations" class="font-bold font-poppins ">Destinations</a>
+     </section>
+     <section id="contactez-nous">
+        <a href="#contactez-nous" class="font-bold font-poppins">contactez-nous</a>
+     </section>
+     </div>
+     <!-- nav-left -->
+      <div class="flex flex-row justify-end items-center gap-5 mr-7">
+     <button class="bg-slate-300 p-3 rounded-md font-poppins">connexion</button>
+     <button class="bg-cyan-500 p-3 rounded-md font-poppins">inscription</button>
+   
+     </div>
+</nav>
+
+<!-- container-1 -->
+ <div class=container>
+<img src="./images/semhili.avif"/>
+<h1 class="text-gros">avec Stravel c'est le monde qui vient vers vous</h1>
+</div>
+
+
+
+<!-- idées de voyage!-->
+ <div class="container2">
+  <p class="titre-idees">IDEES DE VOYAGE</p>
+  <div class="imgc2">
+    <img src = "images/family.jpg"/>
+    <img src="images/freinds.jpg"/>
+    <img src="images/couples.jpg"/>
+    <img src="images/handi.jpg"/>
+  </div>
+
+
+
+  <!-- destionations -->
+   <div class="container3">
+    <p>DESTINATIONS</p>
+    <div class="carte1">
+      <img src=""
+    </div>
+   </div>
+ </div>
+
+
+</div>
+</body>
+</html>
