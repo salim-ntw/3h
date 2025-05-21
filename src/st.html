@@ -70,7 +70,8 @@
     color: rgb(42, 114, 114);
     background-color: white;
    }
-     .container3 p{
+  
+     .container3 h3{
     display: flex;
     justify-content: center;
     padding: 20px;
@@ -88,13 +89,7 @@
    flex-wrap: wrap;
    
    }
-   .imgc2 img{
-    border-radius: 20px;
-     /* animation: reveal linear;
-        animation-timeline: view();
-        animation-range-start: cover 0%;
-        animation-range-end:contain 50% ; */
-   }
+
    
    .cartes{
     display: flex;
@@ -102,21 +97,27 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 40px;
-   
-    background-color: rgb(175, 166, 166);
+    
+    background-color: rgb(34, 137, 137);
     
    }
-   .carte1 , .carte2 , .carte3 , .carte4{
+   .carte{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(40, 114, 114);
-   
+    background-color: rgb(34, 137, 137);
+    border-radius: 20px;
+  
     
    
    }
-   .cartes p{
-    font-size: 10px;
+  .container3   .cartes .carte p{
+    font-size: 20px;
+    padding: 10px;
+    font-weight: bold;
+  
+   
+  
    }
    .cartes img{
     width:60%;
@@ -124,12 +125,104 @@
     margin-top: 20px;
     border-radius: 20px;
    }
+   .item1{
+    position: relative;
+   }
+   .item1 img{
+  border-radius: 20px;
+  transition: all 0.4s ease-in-out;
+  }
+.item1:hover img {
+  opacity: 0.4;
+  
+}
+.item1 .text1{
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  opacity: 0;
+}
+.text1 h2{
+  font-size: 20px;
+  color: rgb(25, 124, 124);
+  font-weight: bold;
+}
+.item1 .text1:hover{
+  opacity: 1;
+ animation: overlay;
+  animation-duration: 1s;
+  animation-timing-function: ease
+}
+@keyframes overlay {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+#contactez-nous{
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  height:100vh;
+  margin-top:50px;
+  gap:20px;
+}
+.contact{
+  display: flex;
+  flex-direction: column;
+  background-color:rgb(42, 133, 133);
+  padding: 20px;
+  
+  width: 40%;
+  height: 50%;
+  gap: 20px;
+  border-radius: 20px;
+  box-shadow: 10px 10px 10px rgb(185, 182, 182) ;
+  
+}
+input{
+  padding: 10px;
+  border-radius: 15px;
+  border: 2px solid ;
+  height: 15%;
+    background-color: rgb(218, 245, 245);
+}
+.message{
+  height: 30%;
+ 
+}
+.btn{
+  padding: 20px;
+  width: 100%;
+  height: 20%;
+  border: 2px solid ;
+  background-color: rgb(218, 245, 245);
+  border-radius: 15px;
+}
+h4{
+      padding: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(42, 114, 114);
+}
+.footer{
+  width: 100%;
+  padding: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(30, 152, 152);
+}
   </style>
 </head>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 <body>
     <!-- main -->
-<div class="w-full bg-cyan-500 ">
+<div class="w-full bg-white ">
     <!-- nav -->
   <nav id="navigation"class="w-full flex flex-row justify-between bg-white p-4 fixed z-40 ">
     <!-- logo -->
@@ -172,10 +265,32 @@
  <div class="container2">
   <p class="titre-idees">IDEES DE VOYAGE</p>
   <div class="imgc2">
-    <img src = "images/family.jpg"/>
-    <img src="images/freinds.jpg"/>
-    <img src="images/couples.jpg"/>
-    <img src="images/handi.jpg"/>
+    <div class="item1">
+       <img src = "images/family.jpg"/>
+       <div class="text1">
+        <h2>FAMILY</h2>
+       </div>
+    </div>
+    <div class="item1">
+       <img src = "images/freinds.jpg"/>
+       <div class="text1">
+        <h2>FRIENDS</h2>
+       </div>
+    </div>
+    <div class="item1">
+       <img src = "images/couples.jpg"/>
+       <div class="text1">
+        <h2>COUPLES</h2>
+       </div>
+    </div>
+    <div class="item1">
+       <img src = "images/handi.jpg"/>
+       <div class="text1">
+        <h2>HANDI</h2>
+       </div>
+    </div>
+    
+    
   </div>
   </section>
 
@@ -184,33 +299,52 @@
   <!-- destionations -->
    <section id="Destinations">
    <div class="container3">
-    <p>DESTINATIONS</p>
+    <h3>DESTINATIONS</h3>
     <div class="cartes">
-    <div class="carte1">
+    <div class="carte">
       <img src="images/oran.webp"/>
       <p>ALGERIA</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, neque!</p>
+     
     </div>
-    <div class="carte2">
+    <div class="carte">
       <img src="images/france.webp"/>
       <p>FRANCE</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, neque!</p>
+          
     </div>
-    <div class="carte3">
+    <div class="carte">
       <img src="images/istanbul.webp"/>
       <p>ISTANBUL</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, neque!</p>
+         
     </div>
-    <div class="carte4">
+    <div class="carte">
       <img src="images/thailand.webp"/>
       <p>THAILAND</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, neque!</p>
+       
     </div>
    </div>
  </div>
  </section>
 
 
+
+ <!-- contactez-nous -->
+  <section id="contactez-nous">
+
+  <h4>CONTACTEZ-NOUS</h4>
+  <div class="contact">
+  <input type="name" placeholder="full name">
+  <input type="email" placeholder="email">
+  <input class="message" type="message" placeholder="message">
+<button class="btn">send</button>
+</div>
+
+  </section>
+
+
+  <!-- footer -->
+  <div class="footer">
+  <h5>ALL RiGHTS ARE NOT RESERVED 2025</h5>
+  </div>
 </div>
 </body>
 </html>
